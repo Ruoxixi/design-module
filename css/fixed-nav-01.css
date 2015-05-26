@@ -1,12 +1,12 @@
-.dev-shop-fixed-nav{position:fixed;top:171px;right:50%;width:150px;margin-right:490px;background:#a50000;}
-.dev-shop-fixed-nav .dev-fixed-nav{position:relative;}
-.dev-shop-fixed-nav .dev-fixed-nav > li{border-bottom:1px dotted #9b6767;line-height:30px;}
-.dev-shop-fixed-nav .dev-fixed-nav > li > a{display:block;padding:5px 10px;color:#fff;}
-.dev-shop-fixed-nav .dev-fixed-nav > li > a:hover{background-color:#cd0000;}
-.dev-shop-fixed-nav .dev-fixed-nav > li ul{display:none;position:absolute;top:0;left:100%;width:980px;padding-bottom:10px;background:#f5f5f5;box-shadow:2px 2px 5px #ccc;}
-.dev-shop-fixed-nav .dev-fixed-nav > li ul li{position:relative;float:left;width:184px;height:250px;margin-left:10px;margin-top:10px;}
-.dev-shop-fixed-nav .dev-fixed-nav > li ul .dev-title{float:none;width:auto;height:auto;font-size:18px;font-family:microsoft yahei;}
-.dev-shop-fixed-nav .dev-fixed-nav > li ul li img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;}
+.dev-shop-fixed-nav-01{position:absolute;top:171px;right:50%;width:150px;margin-right:490px;background:#a50000;}/*position[必选值]:absolute/fixed[需考虑分辨率问题];top:自定义(单位可自定义：%，px,em...)[特别提示：1号店头部高度为171px,悬浮不能盖住此区域];width:自定义(单位可自定义：%，px,em...)[特别提示：例如分辨率为1280*720，其中内容区为980px,两边留白为150px+150px,那么悬浮不能大于150px，否则会盖住内容区]*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01{position:relative;}/*position[必选值]:relative[属性值]*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li{*flotat:left;*width:100%;border-bottom:1px dotted #9b6767;line-height:30px;}/*其中*为解决ie73px间距hack;boder:[可选值];line-height:自定义(单位可自定义：%，px,em...)[一级菜单行高];*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li:hover{background-color:#cd0000;}/*background:自定义[一级菜单鼠标移上去背景色]*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li > a{display:block;padding:5px 10px;color:#fff;}/*padding:自定义;color:自定义*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li ul{display:none;position:absolute;top:0;left:100%;width:980px;padding-bottom:10px;background:#f5f5f5;box-shadow:2px 2px 5px #ccc;}/*display、position、top、left:保持原有值，建议不用修改;width、padding-bottom、background、box-shadow:自定义[其中box-shadow为css3属性，有浏览器兼容问题，可优雅降级处理]*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li ul li{position:relative;float:left;width:184px;height:250px;margin-left:10px;margin-top:10px;}/*二级菜单属性，除position、float之外，其余均可自定义*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li ul .dev-title{float:none;width:auto;height:auto;font-size:18px;font-family:microsoft yahei;}/*在二级菜单里显示一级菜单，如若不需要，可直接删除该行及其对应的html代码*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li ul li img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;}/*二级菜单产品图,如果不需要鼠标移动到图片上有放大效果，可直接删除该行*/
 
-.dev-shop-fixed-nav .dev-fixed-nav li:hover > ul{display:block;}
-.dev-shop-fixed-nav .dev-fixed-nav > li ul li img:hover{top:-15%;left:-15%;z-index:1;width:130%;box-shadow:0 0 10px #666;}
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 li:hover > ul{display:block;}/*显示二级菜单*/
+.dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li ul li img:hover{top:-15%;left:-15%;z-index:1;width:130%;box-shadow:0 0 10px #666;}/*二级菜单产品图放大效果；例如本例图按原来的100%放到到130%，那么top和left值为（130-100）/2,[特别提醒，top和left为负值];box-shadow[可选值]:css3属性*/
