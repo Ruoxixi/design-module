@@ -1,0 +1,31 @@
+.dev-shop-fixed-nav-03{position:absolute;top:171px;right:50%;width:150px;margin-right:490px;box-shadow:-2px 2px 5px #666;background:#000;opacity:.8;filter:alpha(opacity=80);}/*position[必选值]:absolute/fixed[需考虑分辨率问题];top:自定义(单位可自定义：%，px,em...)[特别提示：1号店头部高度为171px,悬浮不能盖住此区域];width:自定义(单位可自定义：%，px,em...)[特别提示：例如分辨率为1280*720，其中内容区为980px,两边留白为150px+150px,那么悬浮不能大于150px，否则会盖住内容区];box-shadow[可选值]:css3属性[浏览器有兼容问题];background:自定义[一级菜单背景色];opacity[可选项]:自定义*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03:before{display:block;content:"";position:absolute;top:0;left:2px;width:2px;height:0;overflow:hidden;background-color:#f5f5f5;
+    -webkit-transition:all 300ms linear;
+    -moz-transtion:all 300ms linear;
+    -o-transtion:all 300ms linear;
+    -ms-transtion:all 300ms linear;
+    transition:all 300ms linear;
+}/*before伪类：ie8以下浏览器不支持,该行为可选项*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03{position:relative;border-top:1px solid #000;border-bottom:1px solid #000;box-sizing:border-box;}/*position[必选值]:relative;其余属性均为可选项，其中box-sizing为css3属性*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03:hover:before{height:100%;}/*该行为可选项*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li{margin-left:2px;border-top:1px dotted #ddd;line-height:30px;}/*margin-left:配合上述before一起用，如若不需要，可删除;border[可选值]:自定义;line-height:自定义(单位可自定义：%，px,em...)[一级菜单行高]*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li{*float:left;*width:100%;}/*解决ie7以下浏览器3px间距hack*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li:first-child{border-top:0 none;}/*css伪类，选中为一级菜单li的第一个标签*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li > a{display:block;padding:5px 10px;color:#fff;}/*padding:自定义;color:自定义*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li > a:hover{background-color:#fff;color:#000;}/*一级菜单鼠标移上去背景色及文字颜色*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li .dev-fixed-navCon-02{display:none;position:absolute;top:-1px;left:100%;width:938px;height:101%;*height:235px;box-sizing:border-box;padding:5px 20px;border:1px solid #000;border-left:0 none;background-color:#fff;}/*display、position、top、left:保持原有值，建议不用修改;width、height、box-sizing、padding、border、background:自定义[其中box-sizing为css3属性，有浏览器兼容问题，可优雅降级处理,*解决ie7浏览器hack]*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li ul{float:left;width:25%;}/*二级菜单列,float[必选值]:left;width:自定义(单位可自定义：%，px,em...)*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li ul li:before{display:block;content:"";position:absolute;top:50%;left:0;width:2px;height:0;overflow:hidden;background-color:#f32600;opacity:.8;filter:alpha(opacity=80);
+    -webkit-transition:all 300ms linear;
+    -moz-transtion:all 300ms linear;
+    -o-transtion:all 300ms linear;
+    -ms-transtion:all 300ms linear;
+    transition:all 300ms linear;
+}/*before伪类：ie8以下浏览器不支持,该行为可选项*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li ul li{position:relative;*border-left:2px solid #fff;line-height:29px;}/*二级菜单每一项，line-height:自定义(单位可自定义：%，px,em...);其余项为可选项*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li ul li:hover:before{top:0;height:100%;opacity:.7;filter:alpha(opacity=70);}/*该行为可选项*/
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li ul li:hover{*border-left:2px solid #f32600;}/*ie7hack*/
+
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li ul li a{display:block;padding:0 10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}/*二级菜单每一项菜单属性，属性均可自定义*/
+
+.dev-shop-fixed-nav-03 .dev-fixed-nav-03 > li:hover .dev-fixed-navCon-02{display:block;}/*显示二级菜单*/
