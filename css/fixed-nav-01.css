@@ -1,4 +1,4 @@
-.dev-shop-fixed-nav-01{position:absolute;top:171px;right:50%;width:150px;margin-right:490px;background:#a50000;}/*position[必选值]:absolute/fixed[需考虑分辨率问题];top:自定义(单位可自定义：%，px,em...)[特别提示：1号店头部高度为171px,悬浮不能盖住此区域];width:自定义(单位可自定义：%，px,em...)[特别提示：例如分辨率为1280*720，其中内容区为980px,两边留白为150px+150px,那么悬浮不能大于150px，否则会盖住内容区]*/
+.dev-shop-fixed-nav-01{position:absolute;top:171px;right:50%;width:150px;margin-right:490px;background:#a50000;font-size:12px;}/*position[必选值]:absolute/fixed[需考虑分辨率问题];top:自定义(单位可自定义：%，px,em...)[特别提示：1号店头部高度为171px,悬浮不能盖住此区域];width:自定义(单位可自定义：%，px,em...)[特别提示：例如分辨率为1280*720，其中内容区为980px,两边留白为150px+150px,那么悬浮不能大于150px，否则会盖住内容区]*/
 .dev-shop-fixed-nav-01 .dev-fixed-nav-01{position:relative;}/*position[必选值]:relative[属性值]*/
 .dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li{*flotat:left;*width:100%;border-bottom:1px dotted #9b6767;line-height:30px;}/*其中*为解决ie73px间距hack;boder:[可选值];line-height:自定义(单位可自定义：%，px,em...)[一级菜单行高];*/
 .dev-shop-fixed-nav-01 .dev-fixed-nav-01 > li:hover{background-color:#cd0000;}/*background:自定义[一级菜单鼠标移上去背景色]*/
