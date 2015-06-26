@@ -1,0 +1,57 @@
+.dev-shop-filter-layout-01{width:960px;margin:50px auto;padding:0 10px 18px;border:1px solid #dedede;background:#fff;}
+.dev-shop-filter-layout-01 dl{position:relative;float:left;width:200px;height:200px;margin:18px 12px 0 24px;overflow:hidden;}
+.dev-shop-filter-layout-01 .dev-pro-pic{width:200px;height:200px;}
+.dev-shop-filter-layout-01 dt{display:table;*display:none;position:relative;*position:static;width:190px;padding:0 5px;background:rgba(0,0,0,0.8);background-color/*\**/:#000 \9;filter:alpha(opacity=80);color:#fff;line-height:22px;text-align:center;}
+
+.dev-shop-filter-layout-01 dt .dev-filter-layout{display:table-cell;*position:absolute;*top:50%;*left:50%;width:190px;vertical-align:middle;}
+.dev-shop-filter-layout-01 dt .dev-filter-layout .dev-filter-layout-con{*position:relative;*top:-50%;%left:-50%;}
+.dev-shop-filter-layout-01 dt .dev-pro-name{*width:190px;overflow:hidden;font:normal 12px microsoft yahei;text-overflow:ellipsis;text-align:left;}
+.dev-shop-filter-layout-01 dt .dev-pro-name a{color:#fff;}
+.dev-shop-filter-layout-01 dt .dev-pro-price{text-align:left;}
+.dev-shop-filter-layout-01 dt .dev-buy-btn{display:inline-block;padding:2px 10px;background-color:#fff;border-radius:2px;color:#000;}
+.dev-shop-filter-layout-01 dt .dev-buy-btn:hover{box-shadow:0 3px 5px #444;}
+
+.dev-shop-filter-layout-01 .item-01 dt{bottom:inherit;}
+.dev-shop-filter-layout-01 .item-02 dt{top:-100%;left:-100%;}
+.dev-shop-filter-layout-01 .item-03 dt{top:-100%;right:-100%;}
+.dev-shop-filter-layout-01 .item-04 dt{top:-200%;}
+.dev-shop-filter-layout-01 .item-05 dt{top:-50%;left:50%;opacity:0;filter:alpha(opacity=0);}
+.dev-shop-filter-layout-01 .item-06 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);}
+.dev-shop-filter-layout-01 .item-07 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);transform:rotateY(180deg);}
+
+.dev-shop-filter-layout-01 dl:hover dt{
+    *display:block;
+    height:100%;
+    transition:all 0.6s linear;
+    *margin-left:0;
+    *margin-top:-100%;
+}
+.dev-shop-filter-layout-01 .item-01:hover dt{
+    margin-top:-100%;
+}
+
+.dev-shop-filter-layout-01 .item-02:hover dt{
+    margin-left:100%;
+}
+.dev-shop-filter-layout-01 .item-03:hover dt{
+    margin-left:-100%;
+}
+.dev-shop-filter-layout-01 .item-04:hover dt{
+    top:-100%;
+}
+.dev-shop-filter-layout-01 .item-05:hover dt{
+    top:-100%;
+    left:0;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+.dev-shop-filter-layout-01 .item-06:hover dt{
+    opacity:1;
+    transform:rotate(360deg);
+    filter:alpha(opacity=100);
+}
+.dev-shop-filter-layout-01 .item-07:hover dt{
+    opacity:1;
+    transform:rotateY(0deg);
+    filter:alpha(opacity=100);
+}
