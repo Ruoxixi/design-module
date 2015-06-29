@@ -1,7 +1,7 @@
 .dev-shop-filter-layout-01{width:960px;margin:50px auto;padding:0 10px 18px;border:1px solid #dedede;background:#fff;}
 .dev-shop-filter-layout-01 dl{position:relative;float:left;width:200px;height:200px;margin:18px 12px 0 24px;overflow:hidden;}
 .dev-shop-filter-layout-01 .dev-pro-pic{width:200px;height:200px;}
-.dev-shop-filter-layout-01 dt{display:table;*display:none;position:relative;*position:static;width:190px;padding:0 5px;background:rgba(0,0,0,0.8);background-color/*\**/:#000 \9;filter:alpha(opacity=80);color:#fff;line-height:22px;text-align:center;}
+.dev-shop-filter-layout-01 dt{display:table;*display:none;position:relative;*position:static;width:190px;height:100%;padding:0 5px;background:rgba(0,0,0,0.8);background-color/*\**/:#000 \9;filter:alpha(opacity=80);color:#fff;line-height:22px;text-align:center;}
 
 .dev-shop-filter-layout-01 dt .dev-filter-layout{display:table-cell;*position:absolute;*top:50%;*left:50%;width:190px;vertical-align:middle;}
 .dev-shop-filter-layout-01 dt .dev-filter-layout .dev-filter-layout-con{*position:relative;*top:-50%;%left:-50%;}
@@ -21,7 +21,10 @@
 
 .dev-shop-filter-layout-01 dl:hover dt{
     *display:block;
-    height:100%;
+    -webkit-transition:all 0.6s linear;
+    -moz-transition:all 0.6s linear;
+    -o-transition:all 0.6s linear;
+    -ms-transition:all 0.6s linear;
     transition:all 0.6s linear;
     *margin-left:0;
     *margin-top:-100%;
@@ -32,9 +35,11 @@
 
 .dev-shop-filter-layout-01 .item-02:hover dt{
     margin-left:100%;
+    *margin-left:0;
 }
 .dev-shop-filter-layout-01 .item-03:hover dt{
     margin-left:-100%;
+    *margin-left:0;
 }
 .dev-shop-filter-layout-01 .item-04:hover dt{
     top:-100%;
@@ -47,11 +52,19 @@
 }
 .dev-shop-filter-layout-01 .item-06:hover dt{
     opacity:1;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
     transform:rotate(360deg);
     filter:alpha(opacity=100);
 }
 .dev-shop-filter-layout-01 .item-07:hover dt{
     opacity:1;
+    -webkit-transform:rotateY(0deg);
+    -moz-transform:rotateY(0deg);
+    -o-transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
     transform:rotateY(0deg);
     filter:alpha(opacity=100);
 }
