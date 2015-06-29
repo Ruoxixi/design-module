@@ -78,6 +78,7 @@
 }
 .dev-shop-filter-layout-01 .item-08:hover dt{
     opacity:1;
+    filter:alpha(opacity=100);
     -webkit-transition: -webkit-transform 2s ease-out;
     -moz-transition: -moz-transform 2s ease-out;
     -o-transition: -o-transform 2s ease-out;
@@ -88,5 +89,4 @@
     -o-transform: rotateZ(360deg);
     -ms-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
-    filter:alpha(opacity=100);
 }
