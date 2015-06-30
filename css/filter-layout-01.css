@@ -1,23 +1,23 @@
-.dev-shop-filter-layout-01{width:960px;margin:50px auto;padding:0 10px 18px;border:1px solid #dedede;background:#fff;}
-.dev-shop-filter-layout-01 dl{position:relative;float:left;width:200px;height:200px;margin:18px 12px 0 24px;overflow:hidden;}
-.dev-shop-filter-layout-01 .dev-pro-pic{width:200px;height:200px;}
-.dev-shop-filter-layout-01 dt{display:table;*display:none;position:relative;*position:static;width:100%;height:100%;box-sizing:border-box;background:rgba(0,0,0,0.8);background-color/*\**/:#000 \9;filter:alpha(opacity=80);color:#fff;line-height:22px;text-align:center;}
+.dev-shop-filter-layout-01{width:960px;margin:0 auto;padding:0 10px 18px;border:1px solid #dedede;background:#fff;}/*width:页面主体内容区宽度;padding:和商品列表图尺寸有关*/
+.dev-shop-filter-layout-01 dl{position:relative;float:left;width:200px;height:200px;margin:18px 12px 0 24px;overflow:hidden;}/*position,float，overflow为不可修改值，width,height自定义*/
+.dev-shop-filter-layout-01 .dev-pro-pic{width:200px;height:200px;}/*商品图width，height可自定义*/
+.dev-shop-filter-layout-01 dt{display:table;*display:none;position:relative;*position:static;width:100%;height:100%;box-sizing:border-box;background:rgba(0,0,0,0.8);background-color/*\**/:#000 \9;filter:alpha(opacity=80);color:#fff;line-height:22px;text-align:center;}/*ie7水平居中和垂直居中采用position定位，其余浏览器使用display:table，这些值为不可修改;background:ie9以下浏览器采用十六进制值，其它浏览器采用rgba[rgb是通过红(R)、绿(G)、蓝(B)三个颜色通道的颜色，a为透明度]*/
 
 .dev-shop-filter-layout-01 dt .dev-filter-layout{display:table-cell;*position:absolute;*top:50%;*left:50%;width:100%;vertical-align:middle;}
 .dev-shop-filter-layout-01 dt .dev-filter-layout .dev-filter-layout-con{*position:relative;*top:-50%;left:-50%;}
-.dev-shop-filter-layout-01 dt .dev-pro-name{*width:190px;overflow:hidden;padding:0 5px;font:normal 12px microsoft yahei;text-overflow:ellipsis;text-align:left;}
-.dev-shop-filter-layout-01 dt .dev-pro-name a{color:#fff;}
-.dev-shop-filter-layout-01 dt .dev-pro-price{padding:0 5px;text-align:left;}
-.dev-shop-filter-layout-01 dt .dev-buy-btn{display:inline-block;padding:2px 10px;background-color:#fff;border-radius:2px;color:#000;}
-.dev-shop-filter-layout-01 dt .dev-buy-btn:hover{box-shadow:0 3px 5px #444;}
+.dev-shop-filter-layout-01 dt .dev-pro-name{*width:190px;overflow:hidden;padding:0 5px;font:normal 12px microsoft yahei;text-overflow:ellipsis;text-align:left;}/* *width:为ie7指定定宽,width为商品图-padding，font:自定义*/
+.dev-shop-filter-layout-01 dt .dev-pro-name a{color:#fff;}/*文字颜色*/
+.dev-shop-filter-layout-01 dt .dev-pro-price{padding:0 5px;text-align:left;}/*价格*/
+.dev-shop-filter-layout-01 dt .dev-buy-btn{display:inline-block;padding:2px 10px;background-color:#fff;border-radius:2px;color:#000;}/* 按钮 */
+.dev-shop-filter-layout-01 dt .dev-buy-btn:hover{box-shadow:0 3px 5px #444;}/* 按钮鼠标移上去状态 */
 
-.dev-shop-filter-layout-01 .item-01 dt{bottom:inherit;}
-.dev-shop-filter-layout-01 .item-02 dt{top:-100%;left:-100%;}
-.dev-shop-filter-layout-01 .item-03 dt{top:-100%;right:-100%;}
-.dev-shop-filter-layout-01 .item-04 dt{top:-200%;}
-.dev-shop-filter-layout-01 .item-05 dt{top:-50%;left:50%;opacity:0;filter:alpha(opacity=0);}
-.dev-shop-filter-layout-01 .item-06 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);}
-.dev-shop-filter-layout-01 .item-07 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);
+.dev-shop-filter-layout-01 .item-01 dt{bottom:inherit;}/*由下往上*/
+.dev-shop-filter-layout-01 .item-02 dt{top:-100%;left:-100%;}/*从左到右*/
+.dev-shop-filter-layout-01 .item-03 dt{top:-100%;right:-100%;}/* 从右到左 */
+.dev-shop-filter-layout-01 .item-04 dt{top:-200%;}/* 由上到下 */
+.dev-shop-filter-layout-01 .item-05 dt{top:-50%;left:50%;opacity:0;filter:alpha(opacity=0);}/* 从中心点到左上角 */
+.dev-shop-filter-layout-01 .item-06 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);}/* 360度旋转 */
+.dev-shop-filter-layout-01 .item-07 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);/* 180度翻转 */
     -webkit-transform:rotateY(180deg);
     -moz-transform:rotateY(180deg);
     -o-transform:rotateY(180deg);

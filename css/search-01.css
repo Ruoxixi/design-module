@@ -1,0 +1,17 @@
+.dev-shop-search-01 .dev-search-text{float:left;width:100px;height:16px;padding:2px;border:1px solid #f00;background:#fff;box-shadow:1px 1px 1px #f0f0f0 inset;vertical-align:middle;
+	-webkit-transition:width 0.5s linear;
+	-moz-transition:width 0.5s linear;
+	-o-transition:width 0.5s linear;
+	-ms-transition:width 0.5s linear;
+	transition:width 0.5s linear;
+}/*除float,其余属性均可自定义;box-shadow,transition为css3属性，有浏览器兼容问题*/
+.dev-shop-search-01 .dev-search-text:focus{width:150px;}/*搜索输入框获取焦点时状态[注：ie7不兼容此写法],属性可自定义*/
+.dev-shop-search-01 .dev-search-btn{float:left;padding:0 10px;height:22px;border:1px solid #f00;background-color:#f00;color:#fff;line-height:20px;text-align:center;vertical-align:middle;cursor:pointer;}/*除float,其余属性均可自定义*/
+.dev-shop-search-01 .dev-search-btn:hover{
+	background-color:#E41A1A;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	transition:all 1s;
+}/*搜索按钮鼠标移上去效果,background:自定义;transition为css3属性，有浏览器兼容问题*/
