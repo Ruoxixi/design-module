@@ -24,7 +24,7 @@
     -ms-transform:rotateY(180deg);
     transform:rotateY(180deg);
 }
-.dev-shop-filter-layout-01 .item-08 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);}
+.dev-shop-filter-layout-01 .item-08 dt{top:-100%;left:0;opacity:0;filter:alpha(opacity=0);}/*360度旋转及图片可为圆形*/
 .dev-shop-filter-layout-01 .item-08 dt img{border-radius:50%;}
 
 .dev-shop-filter-layout-01 dl:hover dt{
